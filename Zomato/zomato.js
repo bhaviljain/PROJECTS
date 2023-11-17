@@ -73,7 +73,6 @@ function startPreparingOrder() {
         CheckIfOrderDelivered()
 
         // checkForOrderDelivery()
-
     ])
         .then(res => {
             console.log(res);
