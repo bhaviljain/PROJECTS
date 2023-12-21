@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    width: 0px;
+
+}
+html , body{
+    height: 90%;
+    width: 90%;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+  
+    
+}
+#container img{
+    height: 100%;
+    width: 100%;;
+    object-fit: cover;
+  
+
+}
+#container i {
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.4s;
+}
+
