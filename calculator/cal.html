@@ -1,0 +1,129 @@
+ <!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+ 
+<head>
+  <meta charset="utf-8">
+  <title>Simple Calculator using HTML, CSS and JavaScript</title>
+  <link rel="stylesheet" href="cal.css">
+</head>
+ 
+<body>
+ 
+<table class="calculator" >
+  <tr>
+    <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+ 
+    
+    <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="1" onclick="display('1')" /> </td>
+    <td> <input type="button" value="2" onclick="display('2')" /> </td>
+    <td> <input type="button" value="3" onclick="display('3')" /> </td>
+    <td> <input type="button" value="/" onclick="display('/')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="4" onclick="display('4')" /> </td>
+    <td> <input type="button" value="5" onclick="display('5')" /> </td>
+    <td> <input type="button" value="6" onclick="display('6')" /> </td>
+    <td> <input type="button" value="-" onclick="display('-')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="7" onclick="display('7')" /> </td>
+    <td> <input type="button" value="8" onclick="display('8')" /> </td>
+    <td> <input type="button" value="9" onclick="display('9')" /> </td>
+    <td> <input type="button" value="+" onclick="display('+')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="." onclick="display('.')" /> </td>
+    <td> <input type="button" value="0" onclick="display('0')" /> </td>
+    <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+    <td> <input type="button" value="*" onclick="display('*')" /> </td>
+  </tr>
+</table>
+ 
+<script type="text/javascript" src="cal.js"></script>
+ 
+</body>
+ 
+</html>  -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+
+</head>
+<body>
+    <div id="calculator">
+    <input type="text" id="display" readonly>
+    <div class="button-container">
+        <button class="button"  onclick="
+        document.querySelector('#display').value = currentDisplay">C</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '0'
+document.querySelector('#display').value = currentDisplay">0</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '1'
+document.querySelector('#display').value = currentDisplay">1</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '2'
+document.querySelector('#display').value = currentDisplay">2</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '3'
+document.querySelector('#display').value = currentDisplay">3</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '4'
+document.querySelector('#display').value = currentDisplay">4</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '5'
+document.querySelector('#display').value = currentDisplay">5</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '6'
+document.querySelector('#display').value = currentDisplay">6</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '7'
+document.querySelector('#display').value = currentDisplay">7</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '8'
+document.querySelector('#display').value = currentDisplay">8</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '9'
+document.querySelector('#display').value = currentDisplay">9</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '+'
+document.querySelector('#display').value = currentDisplay">+</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '/'
+document.querySelector('#display').value = currentDisplay">/</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '*'
+document.querySelector('#display').value = currentDisplay">*</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '-'
+document.querySelector('#display').value = currentDisplay">-</button>
+<button class="button"  onclick="
+currentDisplay = eval(currentDisplay)
+document.querySelector('#display').value = currentDisplay">=</button>
+<button class="button"  onclick="
+currentDisplay = currentDisplay + '%'
+document.querySelector('#display').value = currentDisplay">%</button>
+
+
+<script>
+let currentDisplay ='';
+document.querySelector('#display').value = currentDisplay
+
+</script>
+
+       
+
+
