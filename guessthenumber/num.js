@@ -31,6 +31,7 @@ let num = document.getElementById('num')
 num.innerHTML = y
 let msg1 = document.getElementById('message')
 document.getElementById('submitguess').onclick = function ()
+
 {
     let x = document.getElementById('text').value
     if (x == y){
