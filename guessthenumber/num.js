@@ -33,7 +33,7 @@ let msg1 = document.getElementById('message')
 document.getElementById('submitguess').onclick = function ()
 {
     let x = document.getElementById('text').value
-    if (x == y) {
+    if (x == y){
 
         alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN")
         msg1.textContent = "CONGRATULATIONS"
