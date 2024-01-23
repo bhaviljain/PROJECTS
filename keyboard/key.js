@@ -1,4 +1,3 @@
-
 function run()
 {
 
@@ -11,17 +10,13 @@ output.contentDocument.body.innerHTML = html + "<style>" + css + "</style>"
 output.contentWindow.eval(js); 
 
 }
-function myFunction() {
-    // Get the text field
-  
-    // Select the text field
-    html.select();
-    html.setSelectionRange(0, 99999); // For mobile devices
-  
-     // Copy the text inside the text field
-    navigator.clipboard.writeText(html.value);
-  
-    // Alert the copied text
-    alert("Copied the text: " + html.value);
-  }
- 
+btn.addEventListener("click", ()=>{
+  let html = document.getElementById('text-html')
+  html.select()
+  html.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(html);
+
+
+})
