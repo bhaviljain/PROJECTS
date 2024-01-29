@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: #fab22e;
+}
+#container{
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    padding: 80px 50px;
+
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+
+}
+#btn
+{
+    position: relative;
+    bottom:230px;
+}
+#joke
+{
+    color: white;
+    line-height: 1.3rem;
+}
