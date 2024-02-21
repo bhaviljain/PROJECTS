@@ -90,10 +90,7 @@ const checkWin = () =>{
         document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
             gameover = true;
         }
-        if(wins === "X")
-        {
-            document.getElementsByClassName("points").innerHTML = "x :" + 1;
-        }
+       
     })
    
 }

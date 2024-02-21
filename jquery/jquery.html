@@ -6,7 +6,6 @@
     <script src="javascript.js"></script>
     <title>Document</title>
  
-</head>
 <style>
    body{
     display: flex;
@@ -17,9 +16,10 @@
         width: 50px;
     }
     .circle1{
-     background-color: green;  
-     border-radius: 50%;
- 
+        height: 50px;
+        width: 50px;
+        background-color: green;
+        border-radius: 50%;
     }
     .sqaure1{
         height: 50px;
@@ -32,13 +32,15 @@
         background-color: red;
     } 
 </style>
+</head>
+
 <body>
-        <div id="circle" class="circle1"></div>
-        <div id="circle" class="sqaure1"></div>
-        <div id="circle" class="sqaure2"></div>
+        <div class="circle1"></div>
+        <div class="sqaure1"></div>
+        <div class="sqaure2"></div>
        
     <script>
-       $('div').hover(function(){
+       $('div').click(function(){
         // $('.circle1').css("background-color" ,'red')
         // $('.circle1').css("width" ,'200px')
         $(this).css("display" ,'none')

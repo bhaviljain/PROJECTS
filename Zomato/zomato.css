@@ -13,12 +13,12 @@ font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .disclaimer
 {
-     background-color: red;
+     /* background-color: red; */
      padding: 10px 20px 10px 20px;
      text-align: center;
-        /* animation-duration: 10s;
+        animation-duration: 10s;
         animation-name: slidein;
-        animation-iteration-count: infinite;
+        animation-iteration-count:infinite;
 }
 @keyframes slidein {
     from {
@@ -27,9 +27,11 @@ font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
   
     to {
-      margin-left: 0%;
-      width: 100%;
-    } */
+      margin-right: 100%;
+     width: 1%;
+     
+      
+    }
 }
 .header{
     background: green;
