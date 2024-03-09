@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+.pagination{
+    display: flex;
+margin: 20px;   
+}
+ul li{
+    display: inline-block;
+    margin: 7px;
+    width: 20px;
+}
+
+#btnClose{
+    margin-left: 20px;
+    height: 20px;
+    margin-top: 30px;
+
+}
+ul li.active{
+    text-align: center;
+
+    background-color: red;
+    border-radius: 50%;
+    width: 20%;
+    height: 30px;
+}
+#btnPrev
+{
+    height: 20px;
+    margin-top: 30px;
+
+
+}
