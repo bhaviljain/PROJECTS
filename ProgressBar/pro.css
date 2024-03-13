@@ -1,0 +1,27 @@
+*{
+    color: white;
+}
+#pro{
+    background: #D5D8DF;
+    width: 300PX;
+    position: relative;
+
+}
+#progress{
+    height: 20px;
+    width: 0%;
+    background: #08bf63;
+    position: relative;
+}
+#progressLabel
+{
+    position: absolute;
+    top: 0;
+    /* right: 10; */
+    left: 80%;
+    color: black;
+}
+#btn
+{
+    color: black;
+}
