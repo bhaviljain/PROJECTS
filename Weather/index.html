@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+    <h2 id="location">⚲</h2>
+    <h6 id="weather">aa</h6>
+    <h4><span id="temp"></span><sup>o</sup>C</h4>
+    <img src="" id="icon">
+    <button onclick="window.location.reload()" class="refresh"> 
+        ⟳
+       </button>
+    </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="jquery.js"></script>
+    <script>
+        link = "https://api.openweathermap.org/data/2.5/weather?q=london&appid=d4261837ae4d249f242bb5e6b013ecba"
+        var request = new XMLHttpRequest()
+        request.open('GET',link,true)
+        request.onload=function(){
+        var obj = JSON.parse(this.response)
+        console.log(obj);
+        document.getElementById('weather').innerHTML =
+         obj.weather[0].description
+        document.getElementById('location').innerHTML =
+         `${obj.name} 📍`
+         document.getElementById('icon').src = "https://openweathermap.org/img/w/" + 
+         obj.weather[0].icon + ".png"
+         document.getElementById('temp').innerHTML =Math.round( obj.main.temp - 273.15)
+        }
+       
+        if(request.status>=200 && request.status < 400){
+            var temp =obj.main.temp
+        }
+        else{
+            console.log("not");
+        }
+        request.send()
+    </script>
+</body>
+</html>
