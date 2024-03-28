@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1>This is a simple HTML + CSS template!</h1>
+        <button class="createEmployee">Add</button>
+      </header>
+      <div class="employees">
+        <div class="employees_name">
+          <span class="employees_name--title"> Emp List</span>
+          <div class="employees_name--list"></div>
+        </div>
+        <div class="employees_single">
+          <span class="employees_single--title"> Emp iNfo</span>
+          <div class="employees_name--info"></div>
+      </div>
+    </div>
+    <div class="addEmployee">Add Employee
+
+        <form class="form">
+            <div>
+
+            <input type="text"  name="firstName" placeholder="First Name"/>
+            <input type="text "name="lastName" placeholder="Last Name"/>
+            <button class="closebtn">X</button>
+
+        </div>
+        <input type="text" name="imageUrl" placeholder="URL Image"/>
+        <input type="text" name="Email" placeholder="Email Address"/>
+        <input type="date"
+        name="dob"
+        class="addEmployee_create--dob"
+        placeholder="Date of Birth"
+        />
+        <input type="number" name="salary" placeholder="Salary"/>
+        <input type="number" name="age" placeholder="age"/>
+        <input type="submit"/>
+        </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

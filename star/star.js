@@ -2,6 +2,8 @@ let container = document.getElementById('star-container')
 let star = document.querySelectorAll('.star')
 let filled =0;
 
+
+
 container.addEventListener('click', (e)=>{
     let currClicked = e.target.dataset.index;
     console.log(currClicked);

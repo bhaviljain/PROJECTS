@@ -13,18 +13,16 @@
         }
         else{
     const p =amt.value
-    const r = interest.value /1200
+    const r = interest.value / 1200
     const n = month.value
-    const emiVal = (p*r*(1+r)**n/((1+r)**n)-1)
-    emi.innerHTML = emiVal.toFixed(2)
+    const emiVal = (p *r * (1 + r) ** n) / ((1 + r) ** n -1)
+    emi.textContent = emiVal.toFixed(2)
 
     }
     // amt.value = ''
     // interest.value =''
     // month.value =''
 }
-
-calculateEmi()
-
-
     calculate.addEventListener('click',calculateEmi) 
+
+
