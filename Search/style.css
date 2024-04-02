@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+.head h1{
+    margin-inline: 80px;
+    
+}
+table{
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+
+}
+ td{
+padding: 10px 79px;
+}
+.search{
+    margin-left: 50%;
+    width: 30%;
+    margin-top: 20px;
+}
+.SearchWord{
+    margin-left: 5px;
+}
